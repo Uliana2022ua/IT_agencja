@@ -1,0 +1,48 @@
+.heading {
+    font-weight: bold;
+    margin: 15px 0;
+
+    &--1 {
+        font-size: 27px;
+        line-height: 33px;
+
+        @include large-up {
+            font-size: $font-size-1;
+            line-height: 63px;
+        }
+    }
+
+    &--2 {
+        font-size: $font-size-5;
+        line-height: 27px;
+
+        @include large-up {
+            font-size: $font-size-2;
+            line-height: 54px;
+        }
+    }
+
+    &--3 {
+        font-size: $font-size-4;
+        line-height: $line-height-lg;
+    }
+}
+
+.label {
+    display: block;
+    margin-bottom: 3px;
+    color: $blue-primary;
+    font-weight: $font-weight-semibold;
+    font-size: 20px;
+    line-height: $line-height-sm;
+
+    @include medium-up {
+        font-size: $font-size-3;
+        line-height: $line-height-lg;
+        margin-bottom: 12px;
+    }
+
+    &--white {
+        color: $white
+    }
+}

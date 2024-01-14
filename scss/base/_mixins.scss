@@ -1,0 +1,27 @@
+@mixin small-up {
+    @media (min-width: #{$bp-small}) {
+        @content
+    }
+}
+
+@mixin medium-up {
+    @media (min-width: #{$bp-medium}) {
+        @content
+    }
+}
+
+@mixin large-up {
+    @media (min-width: #{$bp-large}) {
+        @content
+    }
+}
+
+@mixin font-15 {
+    font-size: $font-size-6;
+    line-height: $line-height-sm;
+}
+
+@mixin font-18 {
+    font-size: $font-size-5;
+    line-height: $line-height-base;
+}

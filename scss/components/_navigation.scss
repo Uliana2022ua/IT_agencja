@@ -1,0 +1,99 @@
+.navigation {
+
+    &--desktop {
+        display: none;
+
+        @include medium-up {
+            display: block;
+
+            & ul {
+                display: flex;
+            }
+
+            & a {
+                margin: 0 33px;
+                padding-bottom: 36px;
+                color: $gray-dark;
+                font-weight: $font-weight-regular;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    top: 100%;
+                    left: 0;
+                    width: 0;
+                    height: 8px;
+                    background-color: $blue-primary;
+                    border-top-left-radius: 8px;
+                    border-top-right-radius: 8px;
+                    transition: width .15s ease-in;
+                }
+
+                &:hover {
+                    color: $blue-primary;
+
+                    &::after {
+                        width: 100%;
+                    }
+                }
+
+                &.active {
+                    color: $blue-primary;
+                }
+            }
+        }
+    }
+
+    &--mobile {
+        background-color: $white;
+        position: absolute;
+        left: 0;
+        right: 0;
+        z-index: 1;
+        top: 97px;
+        box-shadow: inset 0px 10px 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 55px 0;
+
+    &__list {
+        & a {
+            display: block;
+            text-align: center;
+            position: relative;
+            padding-bottom: 6px;
+            margin-bottom: 48px;
+            color: $gray-dark;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 0;
+                height: 3px;
+                background-color: $blue-primary;
+                border-radius: 999px;
+                transition: width .15s ease-in;
+            }
+
+            &:hover {
+                color: $blue-primary;
+
+                &::after {
+                    width: 100%;
+                }
+            }
+
+            &.active {
+                color: $blue-primary;
+            }
+        }
+    }
+}

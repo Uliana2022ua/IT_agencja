@@ -1,0 +1,37 @@
+{
+  "name": "IT_agencja",
+  "version": "1.0.0",
+  "description": "Frontend HTML & SCSS Boilerplate with Gulp JS",
+  "main": "index.js",
+  "scripts": {
+    "dev": "gulp"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Uliana2022ua/IT_agencja.git"
+  },
+  "keywords": [],
+  "author": "Uliana",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Uliana2022ua/IT_agencja/issues"
+  },
+  "homepage": "https://github.com/Uliana2022ua/IT_agencja#readme",
+  "devDependencies": {
+    "autoprefixer": "^10.4.16",
+    "browsersync": "0.0.1-security",
+    "cssnano": "^6.0.3",
+    "gulp": "^4.0.2",
+    "gulp-concat": "^2.6.1",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-postcss": "^9.1.0",
+    "gulp-sass": "^5.1.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "gulp-terser": "^2.1.0"
+  },
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "postcss": "^8.1.0",
+    "sass": "^1.69.7"
+  }
+}

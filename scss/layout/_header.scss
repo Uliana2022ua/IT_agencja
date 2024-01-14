@@ -1,0 +1,20 @@
+.header {
+    padding: 28px 0 25px;
+    background-color: $white;
+    position: relative;
+    z-index: 2;
+
+    & .flex {
+        justify-content: space-between;
+    }
+
+    &__btn {
+        &.btn {
+            display: none;
+
+            @include medium-up {
+                display: inline-block;
+            }
+        }
+    }
+}

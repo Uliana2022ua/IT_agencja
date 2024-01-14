@@ -1,0 +1,39 @@
+.footer {
+    padding: 36px 0 50px;
+    background-color: $white;
+
+    @include medium-up {
+        padding: 74px 0 100px;
+    }
+
+    & .flex {
+        flex-direction: column;
+        align-items: flex-start;
+        border-top: 1px solid rgba(161, 161, 170, 0.5);
+        padding-top: 68px;
+
+        @include medium-up {
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 74px;
+        }
+    }
+
+    &__logo {
+        & p {
+            font-size: 14px;
+            margin-top: 8px;
+        }
+    }
+
+    &__text {
+        & p {
+            font-size: $font-size-7;
+            margin-top: 10px;
+
+            @include medium-up {
+                text-align: right;
+            }
+        }
+    }
+}
